@@ -8,6 +8,5 @@ import com.generation.lojagames.model.Categoria;
 
 public interface CategoriaRepository extends JpaRepository<Categoria, Long> {
 
-    // Ajuste o nome da propriedade conforme o campo real na classe Categoria
     Optional<Categoria> findByNome(String nome);
 }

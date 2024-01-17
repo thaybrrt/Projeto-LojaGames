@@ -33,10 +33,8 @@ public class Produto {
     @NotBlank(message = "É obrigatório conter uma imagem")
     private String foto;
 
-    // Construtores, getters e setters
-
     public Produto() {
-        // Construtor padrão
+
     }
 
     public Produto(String nome, String descricao, BigDecimal preco, String foto) {
@@ -45,10 +43,6 @@ public class Produto {
         this.preco = preco;
         this.foto = foto;
     }
-
-    // Outros métodos, se necessário
-
-    // Getters e setters
 
     public long getId() {
         return id;
